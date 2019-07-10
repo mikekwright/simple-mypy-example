@@ -5,4 +5,4 @@ def test(name: str) -> str:
     return 'what'
 
 if __name__ == '__main__':
-    print(test('hi'))
+    print(test(1))
