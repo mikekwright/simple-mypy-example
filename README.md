@@ -141,8 +141,15 @@ if __name__ == '__main__':
 
 ## Conclusion
 
-This repo was used for a quick view of `mypy` and to see how it worked when placed
-in some rather difficult scenarios to determine types.  Outside of the comment
-driven variable type support, the tool worked pretty well from the two little
-experiments that I played with.  I am planning to, moving forward, use `mypy` in
+So, while I was able to find a situation where it didn't catch a type error, I
+can't really say that it is the type checker's issue, but it could be better
+about giving warnings or other information about the inconsitency between
+the type in the list and the extracted type (or a force "cast" style mechanism).  
+
+Also, the typing information is just the standard python type hinting formula
+which is something that I think should be done regardless.  
+
+So, while this was a quick view of `mypy` and a way to see how it worked when placed
+in some rather difficult scenarios to determine types, I do feel that it could
+be beneficial to our team. I am planning to, moving forward, use `mypy` in
 a simple project to see how well it works in a larger real world example.  
