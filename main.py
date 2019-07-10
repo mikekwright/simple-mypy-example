@@ -7,5 +7,5 @@ def second(y: int) -> str:
     return f'second {y}'
 
 if __name__ == '__main__':
-    print(first('hi'))
-    print(second(20))
+    x = first if random.random() > 0.5 else second
+    print(x('hi'))
